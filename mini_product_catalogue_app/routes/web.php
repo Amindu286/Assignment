@@ -32,6 +32,8 @@ Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name
 
 Route::put('/products/{product}', [ProductController::class, 'update'])->name('products.update');
 
+Route::delete('/products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
+
 Route::get('/api/products', [ProductController::class, 'apiIndex']);    
 
 
